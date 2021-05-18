@@ -8,9 +8,9 @@
 body, header, nav, p, div, h1, h2, h3, a, ul, li, img, fieldset, footer, address{margin: 0; padding: 0; border: none;}
 ul, li{list-style: none;}
 img, video{vertical-align: top;}
-a{text-decoration: none; color: #3d3a39;}
-a:hover{text-decoration: underline;color: #adadad;}
-body{font-family: "Noto Sans KR", "Dotum", "돋움", "Helvetica", "AppleGothic", "Apple SD Gothic Neo", "sans-serif"; background: rgb(249, 249, 249); font-size: 12px; color: #3d3a39;}
+a{text-decoration: none; color: #292929;}
+a:hover{text-decoration: underline;color: #858585;}
+body{font-family: "Noto Sans KR", "Dotum", "돋움", "Helvetica", "AppleGothic", "Apple SD Gothic Neo", "sans-serif"; background: rgb(249, 249, 249); font-size: 12px;  color: #292929;}
 .blind {overflow: hidden!important;position: absolute!important;clip: rect(0 0 0 0)!important;width: 1px!important;height: 1px!important;margin: -1px!important;}
 .clearfix::after {content: "";display: block;clear: both;}
 #container {width: 1440px; margin: 0 auto;}
