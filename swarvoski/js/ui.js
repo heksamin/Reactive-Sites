@@ -1,9 +1,9 @@
 $(function() {
     $(".gnb ul li").mouseover(function(){
-        $(".gnb ul li .depth2").stop().slideDown(300);
+        $(this).find(".depth2").stop().slideDown(300);
     });
-    $(".gnb ul li").mouseleave(function(){
-        $(".gnb ul li .depth2").stop().slideUp(300);
+    $(".gnb ul li").mouseout(function(){
+        $(this).find(".depth2").stop().slideUp(300);
     });
 
 
@@ -35,4 +35,7 @@ $(function() {
             opacity: 'hide'
         }, 1000);
     });
+
+    
+
 });
