@@ -45,36 +45,36 @@ button img {width: 60%;}
 .newproduct_wrap {overflow: hidden;}
 .newproduct_wrap ul {overflow: hidden;padding: 50px 80px;border-top: 2px solid #bfbfbf;}
 .newproduct_wrap li{position: relative;float: left;padding-bottom: 68px;background: #fff;padding-right: 40px;}
-.newproduct_wrap .quick_icon {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); opacity: 0;}
+.newproduct_wrap .quick_icon {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); margin-top: -28px;margin-left: -20px; opacity: 0.9;}
 .quick_icon .favoriteoff {width: 24px; height: 24px;}
-.newproduct_wrap li .item:hover .favoriteoff {opacity: 0.9; z-index: 500;}
+.newproduct_wrap .item:hover .favoriteoff {opacity: 0.9; z-index: 500;}
 .newproduct_wrap li:last-child{padding-right: 0;}
 .newproduct_wrap li a{display: block;width: 290px;height: 290px;text-align: center;}
 .newproduct_wrap a:hover {text-decoration: none;}
 .newproduct_wrap li img {width: 100%;}
-.newproduct_wrap .item_name {font-weight: 700;font-size: 18px; }
-.newproduct_wrap .price {font-size: 16px; line-height: 1.6;}
+.newproduct_wrap .item_name {font-size: 15px; }
+.newproduct_wrap .price {font-size: 22px;line-height: 1.6;font-weight: 700;}
 
-.c_p {overflow: hidden; padding: 0 80px 80px;}
-.c_p .cons{float: left; width: 492px;height: 300px;background: #000;}
-.c_p .cons a {display: block;}
-.c_p .cons a img {width: 100%;}
-.banner {float: left; width: 330px; height: 300px;background: #000; margin: 0 42px;}
-.c_p .pen {float: left; width: 372px; height: 300px;background: #000;}
-.c_p .pen a{background-image: url(../image/p_bg.gif); height: 338px; display: block;background-size:100% auto;transition: background 1s;}
-.c_p .pen a:hover{ background-image: url(../image/p_txt.png), url(../image/p_bg.gif);background-position: center center;background-size:100% auto;}
+.c_p {overflow: hidden; padding: 0 80px 200px;}
+.cons{float: left; width: 492px;height: 300px;background: #000;}
+.cons a {display: block;}
+.cons a img {width: 100%;}
+.cup {float: left; width: 352px; height: 300px;background: #000; margin: 0 42px;}
+.cup a {background-image: url(../image/cup.jpg); height: 300px; display: block;background-size:100% auto;}
+.pen {float: left; width: 352px; height: 300px;background: #000;}
+.pen a{background-image: url(../image/pen.jpg); height: 300px; display: block;background-size:100% auto;transition: background 1s;}
 
-.peter  {padding: 0 0 80px;;text-align: center;}
+.peter  {text-align: center;}
 .peter a {display: block;}
 .peter a img {width: 1280px;}
-.atel {background-image: url(../image/at.jpg); margin-bottom: 100px;background-repeat: no-repeat;background-attachment: fixed;background-position: center center;min-width: 700px;}
+.atel {background-image: url(../image/at.jpg); margin: 200px 0 200px;background-repeat: no-repeat;background-attachment: fixed;background-position: center center;min-width: 700px;}
 .atel .at {text-align: center;}
 
-.instagram  {overflow: hidden;padding-bottom: 80px;}
+.instagram  {overflow: hidden;}
 .instagram .ig_title {height: 53px;border-bottom: 2px solid #bfbfbf;padding-bottom: 4px;font-size: 34px;letter-spacing: 2px;}
 .instagram ul {padding: 80px;}
 .instagram li {float: left;overflow: hidden;margin:6px;}
-.instagram li:nth-child(5), .instagram li:nth-child(10) {margin-right: 0;}
+.instagram li:nth-child(5), .instagram li:nth-child(10), .instagram li:nth-child(15) {margin-right: 0;}
 .instagram li a{width: 246px; height: 246px; display: block; overflow: hidden;text-indent: -100px;background-position: center center; transition: background 0.5s; background-size: 100%;}
 .instagram li:nth-child(1) a{background-image: url(../image/igimg01.jpg);}
 .instagram li:nth-child(2) a{background-image: url(../image/igimg02.jpg);}
@@ -88,12 +88,15 @@ button img {width: 60%;}
 .instagram li:nth-child(10) a{background-image: url(../image/igimg10.jpg);}
 .instagram li:nth-child(11) a{background-image: url(../image/igimg11.jpg);}
 .instagram li:nth-child(12) a{background-image: url(../image/igimg12.jpg);}
+.instagram li:nth-child(13) a{background-image: url(../image/igimg13.jpg);}
+.instagram li:nth-child(14) a{background-image: url(../image/igimg14.jpg);}
+.instagram li:nth-child(15) a{background-image: url(../image/igimg15.jpg);}
 .instagram li:nth-child(1), .instagram li:nth-child(6), .instagram li:nth-child(11) {margin-left: 0;}
 .instagram li a:hover {background-size: 120%;}
 
 .g_g {overflow: hidden; padding: 0 80px 80px 80px;}
-.g_g .gi {float: left;width: 616px;}
-.g_g .itf {float: right; width: 620px;}
+.g_g .gi {float: left;width: 618px;}
+.g_g .itf {float: right; width: 618px;}
 .g_g .gi img, .g_g .itf img {width: 100%;}
 
 footer {position: relative; background-color: #252525; width: 100%;text-align: center;}
@@ -109,18 +112,19 @@ footer {position: relative; background-color: #252525; width: 100%;text-align: c
 
 .foot_logo {width: 140px;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: -68px;}
 .foot_logo img {display: block; width: 100%;}
-.sns_icon {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: -46px;margin-left: 560px;}
-.sns_icon_title {color: rgb(216, 216, 216);}
+.sns_icon {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: -46px;margin-left: 530px;}
+.sns_icon_title {text-align: right; color: rgb(216, 216, 216);}
 .sns_icon li {float: left; width: 48px; height: 48px; background-size: 150px 40px; background-image: url(../image/sns_sp.png)}
 .sns_icon .sns_fb {background-position: 6px, 0px;}
 .sns_icon .sns_tw {background-position: 82px, 0px;}
 .sns_icon .sns_yt {background-position: 44px, 0px;}
 .sns_icon .sns_ig {background-position: 118px, 0px;}
 .sns_icon li a {display: inline-block;}
-.newsletter_wrap {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: 38px;margin-left: 560px;color: rgb(216, 216, 216);}
+.newsletter_wrap {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: 38px;margin-left: 538px;color: rgb(216, 216, 216);}
+.newsletter_wrap .newletter_title {text-align: right;}
 .newsletter_wrap form {position: relative;}
 .newsletter_wrap input[type="email"] {position: relative;
-    right: 52px;
+    right: 51px;
     top: 12px;
     border: none;
     line-height: 26px;
@@ -209,7 +213,7 @@ footer address {position: absolute;left: 50%;transform: translate(-50%, -50%);to
 .a_g  li:nth-of-type(8) a{background-image: url(../image/sub_image/g_7.jpg);background-repeat: no-repeat;width: 1201px;height: 518px;padding-bottom: 65px;}
 
 /*sub_4*/
-.on_the_anvil {background-image: url(../image/sub_image/ota.gif);background-position: center center; background-repeat: no-repeat;width:784px;height: 447px;padding: 205px 0;}
+.on_the_anvil {background-image: url(../image/sub_image/ota.gif);background-position: center center; background-repeat: no-repeat;margin: 0 auto;width:784px;height: 447px;padding: 205px 0;}
 
 
 
