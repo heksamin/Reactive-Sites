@@ -1,6 +1,6 @@
 $(function(){ 
     var visual = $('.brandVisual > ul > li');
-    var button = $('.buttonList > li');
+    var button = $('.button_list > li');
     var current = 0;
     var num =visual.length;
     var setIntervalId;

@@ -7,7 +7,7 @@
 .logo {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);margin-top: -16px;}
 .logo a {display: block;height: 23px;}
 .logo a img {width: 140px;}
-.gnb {width:100%;position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); margin-top: 63px; border-top: 1px solid #cecece;text-align: center; z-index: 300;}
+.gnb {width:100%;position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); margin-top: 63px; border-top: 1px solid #cecece;text-align: center; z-index: 2;}
 .depth1 {width: 1440px;margin: 0 auto;}
 .depth1 li {position: relative; float: left; width: 16.666666%;}
 .depth1 li a {display: block; font-size: 15px;text-decoration:none; font-weight: 500;line-height: 2.6;}
@@ -22,11 +22,12 @@
 .util li {display: inline-block;padding-right: 12px;}
 .util li:last-child {padding-right: 0;}
 .util li a{color: #969696;}
-.search {display: none;top: 122px;left: 0;position: relative;background: #fff;height: 315px;z-index: 1;padding: 24px 0;}
 button {position: absolute;top: 0;right: 240px;margin-top: 10px;border: 0;background: 0;padding: 0;display: block;cursor: pointer;}
 button img {width: 60%;}
-.search form {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: -134px;}
-.search form input[type="search"] {box-sizing: content-box;width: 450px;height: 30px;padding: 4px 8px;border: 4px solid #dadada;}
+.search_wrap {display: none; top: 0;left: 0;position: fixed;background: #000000b0;z-index: 3;width: 100%; height: 100%;}
+.search_wrap form input[type="search"] {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin-top: 50px; width: 50%; color: rgb(255, 255, 255); background: transparent; border-top: 1px solid rgba(255, 255, 255, .8); border-bottom: 2px solid rgba(255, 255, 255, .5); border-left: 0px solid transparent; border-right: 0px solid transparent; font-size: 40px; font-family: Roboto; font-weight: 300; text-align: center; outline: none; padding: 10px;}
+.search_wrap .search_close {position: fixed; top: 50px; right: 70px; opacity: 1; font-size: 50px; color: #fff;}
+.search_wrap .search_close:hover {color: #FC2121; cursor: pointer;}
 
 .visual {position: relative;z-index: 1;}/*button의 부모역할*/
 .visual .brandVisual {position: relative; overflow: hidden; height: 600px;}
@@ -35,9 +36,9 @@ button img {width: 60%;}
 .visual .brandVisual .visual_0 {background-image: url(../image/slideimg01.jpg); left: 0;}
 .visual .brandVisual .visual_1 {background-image: url(../image/slideimg02.jpg); left: 100%;}
 .visual .brandVisual .visual_2 {background-image: url(../image/slideimg03.jpg); left: 200%;}
-.visual .buttonList {position: absolute;bottom: 15px;left: 48%;background-position: center center;}
-.visual .buttonList li {float: left; display: block;width: 13px;height: 17px;background-image: url(../image/btn_b.png);text-indent: -100px;overflow: hidden;cursor: pointer;margin: 0 2px;background-position: 0 -16px;}
-.visual .buttonList .on{background-position: 0 0;}
+.visual .button_list {position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%); margin-top: 280px; background-position: center center;}
+.visual .button_list li {float: left; display: block;width: 14px;height: 16px;background-image: url(../image/btn_b.png);text-indent: -100px;overflow: hidden;cursor: pointer;margin: 0 3px;background-position: 0 -16px;}
+.visual .button_list .on{background-position: 0 0;}
 
 /*신상품*/
 .newproduct {padding: 80px 0; overflow: hidden;}
@@ -55,7 +56,7 @@ button img {width: 60%;}
 .newproduct_wrap .item_name {font-size: 15px; }
 .newproduct_wrap .price {font-size: 22px;line-height: 1.6;font-weight: 700;}
 
-.c_p {overflow: hidden; padding: 0 80px 200px;}
+.c_p {overflow: hidden; padding: 0 80px 80px;}
 .cons{float: left; width: 492px;height: 300px;background: #000;}
 .cons a {display: block;}
 .cons a img {width: 100%;}
@@ -72,7 +73,7 @@ button img {width: 60%;}
 
 .instagram  {overflow: hidden;}
 .instagram .ig_title {height: 53px;border-bottom: 2px solid #bfbfbf;padding-bottom: 4px;font-size: 34px;letter-spacing: 2px;}
-.instagram ul {padding: 80px;}
+.instagram ul {padding: 80px 0 200px 80px;}
 .instagram li {float: left;overflow: hidden;margin:6px;}
 .instagram li:nth-child(5), .instagram li:nth-child(10), .instagram li:nth-child(15) {margin-right: 0;}
 .instagram li a{width: 246px; height: 246px; display: block; overflow: hidden;text-indent: -100px;background-position: center center; transition: background 0.5s; background-size: 100%;}
@@ -111,17 +112,17 @@ footer {position: relative; background-color: #252525; width: 100%;text-align: c
 .foot_logo img {display: block; width: 100%;}
 .sns_icon {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: -46px;margin-left: 530px;}
 .sns_icon_title {text-align: right; color: rgb(216, 216, 216);}
-.sns_icon li {float: left; width: 48px; height: 48px; background-size: 150px 40px; background-image: url(../image/sns_sp.png)}
-.sns_icon .sns_fb {background-position: 6px, 0px;}
-.sns_icon .sns_tw {background-position: 82px, 0px;}
-.sns_icon .sns_yt {background-position: 44px, 0px;}
-.sns_icon .sns_ig {background-position: 118px, 0px;}
-.sns_icon li a {display: inline-block;}
+.sns_icon a{float: left; width: 48px; height: 48px; background-size: 150px 40px; background-image: url(../image/sns_sp.png)}
+.sns_icon a.sns_fb {background-position: 6px, 0px;}
+.sns_icon a.sns_tw {background-position: 82px, 0px;}
+.sns_icon a.sns_yt {background-position: 44px, 0px;}
+.sns_icon a.sns_ig {background-position: 118px, 0px;}
+.sns_icon a {display: inline-block; color: transparent;}
 .newsletter_wrap {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: 38px;margin-left: 538px;color: rgb(216, 216, 216);}
 .newsletter_wrap .newletter_title {text-align: right;}
 .newsletter_wrap form {position: relative;}
 .newsletter_wrap input[type="email"] {position: relative; right: 51px; top: 12px; border: none; line-height: 26px; height: 26px; padding-left: 8px;}
-.newsletter_wrap label {position: absolute; left: 0; top: 0; color: transparent;}
+.newsletter_wrap legend, .newsletter_wrap label {position: absolute; left: 0; top: 0; color: transparent;}
 .newsletter_wrap button{position: absolute; right: 0; top: 2px; width: 52px; height: 28px; line-height: 28px; border: 1px solid rgb(255, 255, 255); color: rgb(189, 189, 189);}
 .foot_info {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%); font-weight: 300; color: rgb(216, 216, 216); margin-top: -6px;}
 footer address {position: absolute;left: 50%;transform: translate(-50%, -50%);top: 50%; margin-top: 60px; font-weight: 300; font-size: 12px; color: rgb(134, 134, 134); font-style: normal;}
