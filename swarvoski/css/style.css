@@ -47,7 +47,7 @@ button img {width: 60%;}
 .newproduct_wrap ul {overflow: hidden;padding: 50px 80px;border-top: 2px solid #bfbfbf;}
 .newproduct_wrap li{position: relative;float: left;padding-bottom: 68px;background: #fff;padding-right: 40px;}
 .newproduct_wrap .quick_icon {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); margin-top: -28px;margin-left: -20px; opacity: 0.9;}
-.quick_icon .favoriteoff {width: 24px; height: 24px;}
+.quick_icon .favoriteoff {display: none; width: 24px; height: 24px;}
 .newproduct_wrap .item:hover .favoriteoff {opacity: 0.9; z-index: 500;}
 .newproduct_wrap li:last-child{padding-right: 0;}
 .newproduct_wrap li a{display: block;width: 290px;height: 290px;text-align: center;}
