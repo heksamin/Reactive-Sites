@@ -1,8 +1,8 @@
 $(function() {
-    $(".gnb ul li").mouseover(function(){
+    $(".gnb > ul > li").mouseover(function(){
         $(this).find(".depth2").stop().slideDown(300);
     });
-    $(".gnb ul li").mouseout(function(){
+    $(".gnb > ul > li").mouseout(function(){
         $(this).find(".depth2").stop().slideUp(300);
     });
 
